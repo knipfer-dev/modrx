@@ -1,0 +1,53 @@
+{
+  "name": "svelte-template",
+  "version": "0.0.1",
+  "description": "Template for building svelte apps",
+  "author": "Tyler Knipfer <knipferrc@gmail.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knipferrc/svelte-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knipferrc/svelte-template/issues"
+  },
+  "keywords": [
+    "svelte",
+    "plate",
+    "social"
+  ],
+  "scripts": {
+    "start": "cross-env NODE_ENV=development svelvet",
+    "build": "cross-env NODE_ENV=production svelvet && npm run workbox",
+    "prettier": "prettier --write \"**/*.{tsx,ts,css,md,svelte,js,vue,html}\"",
+    "eslint": "eslint --ext js,svelte .",
+    "workbox": "workbox generateSW workbox-config.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run build"
+    }
+  },
+  "lint-staged": {
+    "*.{svelte,md,js,css,html}": [
+      "prettier --write",
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.9",
+    "prettier": "^2.0.2",
+    "prettier-plugin-svelte": "^0.7.0",
+    "svelte": "^3.20.1",
+    "svelvet": "^0.4.0",
+    "workbox-cli": "^5.1.2"
+  },
+  "dependencies": {
+    "page": "^1.11.5"
+  }
+}
