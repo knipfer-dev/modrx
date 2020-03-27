@@ -3,4 +3,4 @@
 </script>
 
 <Meta title="Home" description="Home page of svelte-template" />
-<h1>Welcome to svelte-template</h1>
+<h1>ModRX</h1>
