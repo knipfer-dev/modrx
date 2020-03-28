@@ -5,3 +5,4 @@ public/dist/
 public/sw.js
 public/sw.js.map
 public/workbox-*
+public/styles/tailwind.css

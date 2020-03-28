@@ -2,5 +2,5 @@
   import Meta from '../../components/Meta/Meta';
 </script>
 
-<Meta title="Home" description="Home page of svelte-template" />
-<h1>ModRX</h1>
+<Meta title="Home" description="Welcome to ModRX" />
+<h1 class="text-2xl">ModRX</h1>

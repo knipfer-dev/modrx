@@ -4,6 +4,6 @@
 </script>
 
 <svelte:head>
-  <title>Template - {title}</title>
+  <title>ModRX - {title}</title>
   <meta name="description" content={description} />
 </svelte:head>
