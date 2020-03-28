@@ -4,7 +4,7 @@ module.exports = {
     [
       'transform-inline-environment-variables',
       {
-        include: ['NODE_ENV'],
+        include: ['NODE_ENV', 'MAPS_API_KEY'],
       },
     ],
   ],

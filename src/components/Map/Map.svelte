@@ -1,0 +1,17 @@
+<script>
+  let container;
+  let map;
+  let zoom = 8;
+  let center = { lat: -34.397, lng: 150.644 };
+
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    map = new google.maps.Map(container, {
+      zoom,
+      center,
+    });
+  });
+</script>
+
+<div class="w-full h-full rounded-lg" bind:this={container} />
