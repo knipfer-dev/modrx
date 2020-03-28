@@ -3,16 +3,16 @@
 
   import DefaultLayout from '../layouts/DefaultLayout/DefaultLayout';
 
-  import Home from './Home/Home';
+  import Dashboard from './Dashboard/Dashboard';
 
   let pageProps = {
-    component: Home,
+    component: Dashboard,
     layout: DefaultLayout,
   };
 
   page('/', () => {
     pageProps = {
-      component: Home,
+      component: Dashboard,
       layout: DefaultLayout,
     };
   });
