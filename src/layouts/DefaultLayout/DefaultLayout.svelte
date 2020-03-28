@@ -1,3 +1,10 @@
+<script>
+  import Navbar from './components/Navbar';
+</script>
+
 <main>
-  <slot />
+  <Navbar />
+  <div class="pt-12">
+    <slot />
+  </div>
 </main>
