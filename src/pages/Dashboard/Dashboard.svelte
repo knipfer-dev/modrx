@@ -3,6 +3,7 @@
   import TextInput from '../../components/TextInput';
 
   import DealerCard from './components/DealerCard';
+  import NoDealers from './components/NoDealers';
 
   let searchedDealers = [];
 
@@ -10,14 +11,14 @@
     {
       id: '1234',
       name: 'Subaru',
-      location: 'Loveland OH, 45140',
-      modFriendlyRating: 4.8,
+      location: '1234 Race St. Loveland OH, 45140',
+      modFriendlyRating: 4,
     },
     {
       id: '4567',
       name: 'Ford',
-      location: 'Florence KY, 41011',
-      modFriendlyRating: 4.8,
+      location: '2345 Race St. Florence KY, 41011',
+      modFriendlyRating: 2,
     },
   ];
 
@@ -26,7 +27,7 @@
 
     if (e.target.value !== '') {
       searchedDealers = dealers.filter(dealer =>
-        dealer.name.includes(searchTerm),
+        dealer.name.toLowerCase().includes(searchTerm.toLowerCase()),
       );
     } else {
       searchedDealers = [];
@@ -41,7 +42,7 @@
     <TextInput fullWidth placeholder="Search Dealers" on:keyup={search} />
   </div>
   {#if searchedDealers.length === 0}
-    <h1>Start searching to find dealers</h1>
+    <NoDealers />
   {/if}
   <div class="grid md:grid-flow-row md:grid-cols-3 gap-4">
     {#each searchedDealers as dealer}
