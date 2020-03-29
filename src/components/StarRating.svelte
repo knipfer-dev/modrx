@@ -9,7 +9,7 @@
 <div class="flex items-center">
   {#each numberOfStars as rating}
     <span
-      class="star text-gray-500"
+      class="text-xl text-gray-500 cursor-pointer"
       class:text-yellow-500={currentRating > rating}
       data-value={rating + 1}>
       &#9733;
