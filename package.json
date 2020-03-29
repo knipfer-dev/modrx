@@ -32,7 +32,7 @@
     "prettier": "^2.0.2",
     "prettier-plugin-svelte": "^0.7.0",
     "svelte": "^3.20.1",
-    "svelvet": "^0.4.0",
+    "svelvet": "^0.4.1",
     "workbox-cli": "^5.1.2"
   },
   "dependencies": {

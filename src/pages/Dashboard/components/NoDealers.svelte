@@ -1,6 +1,7 @@
-<div class="flex justify-center items-center flex-col mt-24">
-  <div class="text-6xl">&#128683;</div>
-  <h2 class="text-3xl font-bold text-center md:w-1/2">
-    Start searching for dealers to find mod friendly ones
-  </h2>
+<div class="text-xl uppercase mt-4 font-bold mb-4 text-gray-300 text-center">Start searching for dealers today to find the one right for you</div>
+<div class="grid md:grid-flow-row md:grid-cols-2 gap-4">
+  <img class="rounded-lg"  src="/images/focus.jpg" alt="wrx" width="auto" height="250" />
+  <img class="rounded-lg"  src="/images/bmw.jpg" alt="wrx" width="auto" height="600px" />
+  <img class="rounded-lg"  src="/images/nismo.jpg" alt="wrx" width="auto" height="250" />
+  <img class="rounded-lg"  src="/images/ferrari.jpg" alt="wrx" width="auto" height="250" />
 </div>
